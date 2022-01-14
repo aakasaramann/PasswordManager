@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter import messagebox
 from random import randint, shuffle, choice
 from pyperclip import copy
-import os
 
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
@@ -67,9 +66,9 @@ email_label = Label(text="Email/Username:", font=("Arial", 12, "bold"))
 email_label.grid(column=0, row=2)
 email_entry = Entry(width=36)
 email_entry.grid(columnspan=2, column=1, row=2)
-email_entry.insert(0, os.environ["DEFAULT_USERNAME"])
-'''os.environ["DEFAULT_USERNAME"] inserts default username that is stored as system environment variable.
-You can just replace the entire second argument os.environ["DEFAULT_USERNAME"] with your default username/email'''
+email_entry.insert(0, "aakasaramann")
+''' inserts default username that is stored as system environment variable.
+You can just replace the entire second argument with your default username/email'''
 
 password_label = Label(text="Password:", font=("Arial", 12, "bold"))
 password_label.grid(column=0, row=3)
